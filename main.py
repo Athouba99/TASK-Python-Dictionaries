@@ -25,15 +25,25 @@ print(add_hobby(person, "Table Tennis"))
 
 # CHALLENGE
 
-# Create a function called `add_job` which takes `person` dictionary and `job` which is a string, as arguments. This function checks, if the dictionary does not have a property called `job` then it will add it to the dictionary. The function will return the updated dictionary.
-
+# 1. Create a function called `add_job` which takes `person` dictionary and `job` which is a string, as arguments. 
+#This function checks, if the dictionary does not have a property called `job` then it will add it to the dictionary.
+#The function will return the updated dictionary.
 
 def add_job(person, job):
-    ...
+    '''
+    if  "job" not in person: # to check if this key is in the dictionary 
+        person.updated ({"job" : "no job"})# to add a key called job to the dictionary 
+        return job # to return the updated dictionary with job added to it 
+        
 
+print(add_job(person, job)) 
+    ''' 
 
 # 2. Create a function called `check_hobbies`, which takes a person dictionary as an argument. This function checks the number of hobbies for this person, if it's more than three hobbies, print to the user a message telling them that they're talented.
-
-
 def check_hobbies(person):
-    ...
+    #for "hobbies" in person: # to check the key hobbies for the dictionary person 
+    if len(person["hobbies"]) == 3: # to check the elements number of the proprty hobbies if = 3 
+        print("you are talented person")
+        return # to save the value 
+
+print(check_hobbies(person)) 
